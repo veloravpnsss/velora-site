@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пользовательское соглашение — Velora VPN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* =========================
+           VELORA VPN — LEGAL PAGES (DARK GLASS)
+           ========================= */
+        :root {
+            --bg: #09090b;
+            --text: #ffffff;
+            --muted: #a1a1aa;
+            --border: rgba(255, 255, 255, 0.08);
+            --glow-blue: rgba(56, 189, 248, 0.8);
+            --glow-purple: rgba(139, 92, 246, 0.8);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* ФОНОВЫЕ СВЕЧЕНИЯ */
+        .ambient-glow {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(130px);
+            opacity: 0.12;
+        }
+        .orb-1 { top: -10%; left: -10%; width: 50vw; height: 50vw; background: #38bdf8; }
+        .orb-2 { bottom: -20%; right: -10%; width: 60vw; height: 60vw; background: #8b5cf6; }
+
+        /* ШАПКА */
+        header {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .velora-logo {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--muted);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+        }
+
+        /* КАРТОЧКА С ДОКУМЕНТОМ */
+        .doc-card {
+            background: rgba(24, 24, 27, 0.45);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 50px;
+            width: 100%;
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        }
+
+        .doc-card h1 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin: 0 0 30px 0;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 30px;
+        }
+
+        .doc-card h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 40px 0 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .doc-card p, .doc-card li {
+            font-size: 15px;
+            color: var(--muted);
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .doc-card ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .doc-card strong {
+            color: #e4e4e7;
+            font-weight: 600;
+        }
+
+        .doc-card a.link {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .doc-card a.link:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .footer-note {
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: #71717a;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .doc-card { padding: 35px 25px; }
+            .doc-card h1 { font-size: 24px; }
+            header { flex-direction: column; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ФОНОВЫЕ СВЕЧЕНИЯ -->
+<div class="ambient-glow">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+</div>
+
+<header>
+    <div class="velora-logo">VELORA</div>
+    <a href="index.html" class="back-link">← На главную</a>
+</header>
+
+<div class="doc-card">
+    <h1>Пользовательское соглашение</h1>
+    
+    <p>Настоящее Пользовательское соглашение (далее — «Соглашение») регулирует отношения между сервисом Velora VPN (далее — «Сервис» или «Исполнитель») и любым физическим лицом (далее — «Пользователь»), использующим услуги Сервиса.</p>
+    <p>Использование Сервиса означает полное и безоговорочное согласие Пользователя с условиями настоящего Соглашения.</p>
+
+    <h2>1. Предмет соглашения</h2>
+    <p>1.1. Исполнитель предоставляет Пользователю услуги защищенного доступа к сети Интернет (VPN) путем предоставления конфигурационных файлов и ключей доступа (далее — «Услуги»).</p>
+    <p>1.2. Услуги предоставляются по принципу «как есть» (as is). Исполнитель не гарантирует, что Услуги будут соответствовать индивидуальным требованиям Пользователя, но обязуется прилагать все усилия для обеспечения бесперебойной работы.</p>
+
+    <h2>2. Права и обязанности сторон</h2>
+    <p><strong>2.1. Пользователь обязуется:</strong></p>
+    <ul>
+        <li>Использовать Сервис исключительно в законных целях.</li>
+        <li>Не использовать Сервис для рассылки спама, сканирования портов, проведения DDoS-атак, распространения вредоносного ПО и любых других действий, нарушающих законодательство.</li>
+        <li>Не передавать свои ключи доступа третьим лицам для массового использования (лимит одновременных подключений — 10 устройств на одну подписку).</li>
+    </ul>
+    
+    <p><strong>2.2. Исполнитель имеет право:</strong></p>
+    <ul>
+        <li>Приостановить или заблокировать доступ Пользователя к Сервису без возврата средств в случае грубого нарушения пункта 2.1 настоящего Соглашения.</li>
+        <li>Проводить технические работы на серверах, что может вызвать кратковременную недоступность Услуг.</li>
+    </ul>
+
+    <h2>3. Политика конфиденциальности (No-Logs)</h2>
+    <p>3.1. Сервис Velora VPN строго придерживается политики отсутствия логов. Мы не собираем, не отслеживаем и не храним информацию о посещаемых Пользователем сайтах, скачиваемых файлах и оригинальных IP-адресах.</p>
+    <p>3.2. Для оказания Услуг обрабатывается только минимально необходимая техническая информация (email или ID Telegram для привязки подписки).</p>
+
+<h2>4. Оплата, подписка и возврат средств</h2>
+    <p>4.1. Доступ к Сервису предоставляется на условиях автоматического продления подписки (рекуррентные платежи) на базе 100% предоплаты согласно тарифам, указанным на сайте.</p>
+    <p>4.2. Оплачивая Услуги, Пользователь соглашается с тем, что по истечении оплаченного периода стоимость следующего будет списываться с его банковской карты автоматически.</p>
+    <p>4.3. Пользователь вправе в любой момент отменить автоматическое продление подписки через специальную ссылку управления подпиской, которая отправляется на указанный при оплате Email, либо обратившись в службу поддержки.</p>
+    <p>4.4. Пользователь имеет право запросить возврат денежных средств в течение 14 дней с момента первоначальной оплаты в случае технических неисправностей. Подробные условия описаны в документе <a href="refund.html" class="link">«Условия возврата»</a>.</p>
+
+    <h2>5. Ограничение ответственности</h2>
+    <p>5.1. Исполнитель не несет ответственности за любой прямой или косвенный ущерб, упущенную выгоду или потерю данных, возникшие в результате использования или невозможности использования Сервиса.</p>
+    <p>5.2. Пользователь несет личную ответственность за любые действия, совершаемые им в сети Интернет с использованием Сервиса.</p>
+
+    <h2>6. Контактная информация</h2>
+    <p>По всем вопросам, связанным с исполнением настоящего Соглашения, Пользователь может обращаться в службу поддержки:</p>
+    <ul>
+        <li>Telegram: <a href="https://t.me/agatovdd" class="link" target="_blank">@agatovdd</a></li>
+        <li>Email: <a href="mailto:agatovdd@gmail.com" class="link">agatovdd@gmail.com</a></li>
+    </ul>
+
+    <div class="footer-note">
+        Редакция от 13 сентября 2026 года.<br>
+    </div>
+</div>
+
+</body>
+</html>

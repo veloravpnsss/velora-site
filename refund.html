@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Условия возврата средств — Velora VPN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* =========================
+           VELORA VPN — LEGAL PAGES (DARK GLASS)
+           ========================= */
+        :root {
+            --bg: #09090b;
+            --text: #ffffff;
+            --muted: #a1a1aa;
+            --border: rgba(255, 255, 255, 0.08);
+            --glow-blue: rgba(56, 189, 248, 0.8);
+            --glow-purple: rgba(139, 92, 246, 0.8);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* ФОНОВЫЕ СВЕЧЕНИЯ */
+        .ambient-glow {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(130px);
+            opacity: 0.12;
+        }
+        .orb-1 { top: -10%; left: -10%; width: 50vw; height: 50vw; background: #38bdf8; }
+        .orb-2 { bottom: -20%; right: -10%; width: 60vw; height: 60vw; background: #8b5cf6; }
+
+        /* ШАПКА */
+        header {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .velora-logo {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--muted);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+        }
+
+        /* КАРТОЧКА С ДОКУМЕНТОМ */
+        .doc-card {
+            background: rgba(24, 24, 27, 0.45);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 50px;
+            width: 100%;
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        }
+
+        .doc-card h1 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin: 0 0 30px 0;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 30px;
+        }
+
+        .doc-card h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 40px 0 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .doc-card p, .doc-card li {
+            font-size: 15px;
+            color: var(--muted);
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .doc-card ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .doc-card strong {
+            color: #e4e4e7;
+            font-weight: 600;
+        }
+
+        .doc-card a.link {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .doc-card a.link:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .footer-note {
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: #71717a;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .doc-card { padding: 35px 25px; }
+            .doc-card h1 { font-size: 24px; }
+            header { flex-direction: column; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ФОНОВЫЕ СВЕЧЕНИЯ -->
+<div class="ambient-glow">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+</div>
+
+<header>
+    <div class="velora-logo">VELORA</div>
+    <a href="index.html" class="back-link">← На главную</a>
+</header>
+
+<div class="doc-card">
+    <h1>Условия возврата средств</h1>
+    
+    <p>Настоящие условия описывают политику отмены подписки и возврата денежных средств за услуги сервиса Velora VPN.</p>
+
+    <h2>1. Сроки запроса возврата</h2>
+    <p>Пользователь имеет право запросить возврат денежных средств в течение <strong>14 календарных дней</strong> с момента совершения оплаты.</p>
+
+   <h2>2. Условия оформления возврата</h2>
+    <p>Мы осуществляем возврат средств в случае возникновения технических проблем и перебоев в работе сервиса, которые соответствуют следующим критериям:</p>
+    <ul>
+        <li>Проблема возникла не по вине пользователя (проблема на стороне серверов Velora VPN).</li>
+        <li>Сервис работает нестабильно, происходят постоянные обрывы соединения, из-за чего использование VPN по прямому назначению становится невозможным.</li>
+        <li>Качество предоставляемой услуги объективно не соответствует заявленному и не устраивает пользователя.</li>
+    </ul>
+    
+    <p><strong>Важно об автопродлении:</strong> Возврат денежных средств за автоматически продленную подписку не осуществляется, если Пользователь забыл или не успел отменить её до момента очередного списания. Отмена подписки является зоной ответственности Пользователя.</p>
+
+   <h2>3. Порядок оформления заявки</h2>
+    <p>Для оформления возврата пользователю необходимо связаться со службой поддержки одним из следующих способов:</p>
+    <ul>
+        <li>Telegram: <a href="https://t.me/agatovdd" class="link" target="_blank">@agatovdd</a></li>
+        <li>Email: <a href="mailto:agatovdd@gmail.com" class="link">agatovdd@gmail.com</a></li>
+    </ul>
+    <p>В обращении необходимо указать email, использованный при оплате, или ID платежа, а также кратко описать техническую причину отказа от услуги.</p>
+    
+    <p><strong>Отключение автопродления:</strong> Обратите внимание, что при оплате банковской картой на сайте отключить автоматическое продление подписки можно самостоятельно. Ссылка для управления подпиской и её отмены всегда находится в электронном чеке с данными для входа, который отправляется на ваш email сразу после оплаты.</p>
+
+    <h2>4. Сроки зачисления средств</h2>
+    <p>После рассмотрения и одобрения заявки технической поддержкой, денежные средства возвращаются на ту же банковскую карту или счет, с которого была произведена оплата.</p>
+    <p>Срок поступления денежных средств на счет пользователя составляет <strong>до 14 рабочих дней</strong> (точные сроки зависят от регламента банка-эмитента карты пользователя).</p>
+
+    <div class="footer-note">
+        Редакция от 13 сентября 2026 года.<br>
+    </div>
+</div>
+
+</body>
+</html>

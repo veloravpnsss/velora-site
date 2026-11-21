@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Оплата — Velora</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f8;
+            color: #202124;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        .payment {
+            width: 100%;
+            max-width: 480px;
+            background: white;
+            border: 1px solid #e7e7e9;
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.06);
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            color: #777980;
+            line-height: 1.5;
+            margin-bottom: 28px;
+        }
+
+        .plan {
+            background: #f7f7f8;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .plan-name {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .price span {
+            font-size: 16px;
+            font-weight: 400;
+            color: #777980;
+        }
+
+        .features {
+            margin-top: 15px;
+            color: #777980;
+            line-height: 1.8;
+        }
+
+        .pay-button {
+            width: 100%;
+            border: none;
+            border-radius: 14px;
+            padding: 16px;
+            background: #74708f;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .pay-button:hover {
+            opacity: 0.9;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #777980;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="payment">
+
+        <div class="logo">
+            VELORA
+        </div>
+
+        <h1>Оплата подписки</h1>
+
+        <p class="description">
+            Подключение VPN Velora на 1 месяц.
+        </p>
+
+        <div class="plan">
+
+            <div class="plan-name">
+                START
+            </div>
+
+            <div class="price">
+                299 ₽ <span>/ месяц</span>
+            </div>
+
+            <div class="features">
+                ✓ 10 устройств<br>
+                ✓ 79 локаций<br>
+                ✓ Безлимитная скорость<br>
+                ✓ Поддержка
+            </div>
+
+        </div>
+
+        <button class="pay-button" onclick="pay()">
+            Перейти к оплате
+        </button>
+
+        <a href="index.html" class="back">
+            ← Вернуться на главную
+        </a>
+
+    </div>
+
+    <script>
+
+        function pay() {
+
+            alert("A0936784FD676408FB05777655950F8B27D8C89E29AF652D4289F16152F21FE7");
+
+        }
+
+    </script>
+
+</body>
+</html>
